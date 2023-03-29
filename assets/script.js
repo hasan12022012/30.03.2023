@@ -14,10 +14,10 @@ function add() {
         data += `<li class="list-group-item">${item}</li>`
 
         if(!todo.includes(inp.value)){
-            todo.push(inp.value);
+            todo.pop();
         }
         if((inp.value !='')){
-            todo.push(inp.value);
+            todo.pop();
         }
     }
     
